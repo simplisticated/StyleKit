@@ -50,8 +50,8 @@
 		693F96D71DE5C29A00E1F32C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				693F96D81DE5C29A00E1F32C /* Style.swift */,
 				693F96D91DE5C29A00E1F32C /* StyleAttribute.swift */,
+				693F96D81DE5C29A00E1F32C /* Style.swift */,
 				693F96DA1DE5C29A00E1F32C /* StyleBuilder.swift */,
 				693F96DB1DE5C29A00E1F32C /* StyleManager.swift */,
 			);

@@ -1,6 +1,6 @@
 //
 //  StyleManager.swift
-//  StyleKitDemo
+//  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
 //  Copyright © 2016 Visuality. All rights reserved.
@@ -88,6 +88,15 @@ public class StyleManager: NSObject {
             } else if associatedView is UITextView {
                 let textView = associatedView as! UITextView
                 textView.font = font
+            }
+            break
+        case let .textAlignment(alignment):
+            if associatedView is UILabel {
+                let label = associatedView as! UILabel
+                label.textAlignment = alignment
+            } else if associatedView is UITextView {
+                let textView = associatedView as! UITextView
+                textView.textAlignment = alignment
             }
             break
         }

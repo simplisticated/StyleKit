@@ -1,6 +1,6 @@
 //
 //  StyleBuilder.swift
-//  StyleKitDemo
+//  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
 //  Copyright © 2016 Visuality. All rights reserved.

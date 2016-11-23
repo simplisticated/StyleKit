@@ -1,6 +1,6 @@
 //
 //  StyleAttribute.swift
-//  StyleKitDemo
+//  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
 //  Copyright © 2016 Visuality. All rights reserved.
@@ -15,4 +15,5 @@ public enum StyleAttribute {
     case borderWidth(width: CGFloat)
     case textColor(color: UIColor)
     case font(font: UIFont)
+    case textAlignment(alignment: NSTextAlignment)
 }
