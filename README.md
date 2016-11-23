@@ -28,40 +28,57 @@ or
 
 # Usage
 
+Style is a set of UI attributes. Each style includes at least one attribute, but can include unlimited collection of attributes.
+
 ```swift
 /*
- * Declare simple style with one attribute.
+ * Create simple style with one attribute.
  */
+let attributes: [StyleAttribute] = [
+    .backgroundColor(color: .yellow)
+]
 
-let yellowBackground = Style.with(attribute: .backgroundColor(color: .yellow))
+let yellowBackground = Style(attributes: attributes)
 
 /*
- * Declare style with multiple attributes.
+ * Another way to create the same style.
+ */
+
+let anotherYellowBackground = Style.with(attribute: .backgroundColor(color: .yellow))
+    .done()
+
+/*
+ * Create style with multiple attributes.
  */
 
 let greenBackgroundWithThinRedBorder = Style.with(attribute: .backgroundColor(color: .green))
     .and(attribute: .borderColor(color: .red))
     .and(attribute: .borderWidth(width: 1.0))
+    .done()
+```
 
+Any style can be applied to any view. You can apply unlimited number of styles to the same view.
+
+```swift
 /*
  * Apply style to view.
  */
 
 view.stl.apply(style: yellowBackground)
 
-
 /*
  * Apply multiple styles to view.
  */
 
 view.stl.apply(style: yellowBackground)
-  .apply(style: greenBackgroundWithThinRedBorder)
+    .apply(style: greenBackgroundWithThinRedBorder)
 ```
 
 Recommended way to manage styles in app is to implement a structure with static styles:
 
 ```swift
 struct StyleStorage {
+    
     static let defaultBackground = Style.with(attribute: .backgroundColor(color: .white))
         .and(attribute: .borderColor(color: .green))
         .and(attribute: .borderWidth(width: 2.0))
@@ -70,6 +87,7 @@ struct StyleStorage {
     static let thinOrangeText = Style.with(attribute: .textColor(color: .orange))
         .and(attribute: .font(font: UIFont.systemFont(ofSize: 36.0, weight: UIFontWeightThin)))
         .done()
+        
 }
 ```
 
@@ -86,7 +104,7 @@ override func viewDidLoad() {
     view.stl.apply(style: StyleStorage.defaultBackground)
     
     /*
-     * Initialize hello label.
+     * Initialize title label.
      */
     
     titleLabel.stl.apply(style: StyleStorage.thinOrangeText)
