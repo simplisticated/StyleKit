@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69517BF01DE6164500C4DFB5 /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517BEA1DE6164500C4DFB5 /* ViewStyle.swift */; };
-		69517BF11DE6164500C4DFB5 /* ViewStyleAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517BEB1DE6164500C4DFB5 /* ViewStyleAttribute.swift */; };
-		69517BF21DE6164500C4DFB5 /* ViewStyleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517BEC1DE6164500C4DFB5 /* ViewStyleBuilder.swift */; };
-		69517BF31DE6164500C4DFB5 /* ViewStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517BED1DE6164500C4DFB5 /* ViewStyleManager.swift */; };
-		69517BF41DE6164500C4DFB5 /* UIViewExtensionStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517BEF1DE6164500C4DFB5 /* UIViewExtensionStyleKit.swift */; };
+		69517C561DE62F6100C4DFB5 /* StyleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69517C551DE62F6100C4DFB5 /* StyleKit.framework */; };
+		69517C571DE62F6100C4DFB5 /* StyleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69517C551DE62F6100C4DFB5 /* StyleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69DCD4ED1DE580E3004E1DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */; };
 		69DCD4F41DE580E3004E1DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */; };
 		69DCD4F71DE580E3004E1DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DCD4F51DE580E3004E1DC2 /* LaunchScreen.storyboard */; };
@@ -20,12 +17,22 @@
 		69DCD5101DE58759004E1DC2 /* StyleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCD50F1DE58759004E1DC2 /* StyleStorage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		69517C581DE62F6100C4DFB5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69517C571DE62F6100C4DFB5 /* StyleKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		69517BEA1DE6164500C4DFB5 /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
-		69517BEB1DE6164500C4DFB5 /* ViewStyleAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleAttribute.swift; sourceTree = "<group>"; };
-		69517BEC1DE6164500C4DFB5 /* ViewStyleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleBuilder.swift; sourceTree = "<group>"; };
-		69517BED1DE6164500C4DFB5 /* ViewStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleManager.swift; sourceTree = "<group>"; };
-		69517BEF1DE6164500C4DFB5 /* UIViewExtensionStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionStyleKit.swift; sourceTree = "<group>"; };
+		69517C551DE62F6100C4DFB5 /* StyleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StyleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DCD4E91DE580E3004E1DC2 /* StyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,44 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69517C561DE62F6100C4DFB5 /* StyleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69517BE81DE6164500C4DFB5 /* StyleKit */ = {
-			isa = PBXGroup;
-			children = (
-				69517BE91DE6164500C4DFB5 /* Engine */,
-				69517BEE1DE6164500C4DFB5 /* Extensions */,
-			);
-			name = StyleKit;
-			path = ../../../../StyleKit;
-			sourceTree = "<group>";
-		};
-		69517BE91DE6164500C4DFB5 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				69517BEB1DE6164500C4DFB5 /* ViewStyleAttribute.swift */,
-				69517BEA1DE6164500C4DFB5 /* ViewStyle.swift */,
-				69517BEC1DE6164500C4DFB5 /* ViewStyleBuilder.swift */,
-				69517BED1DE6164500C4DFB5 /* ViewStyleManager.swift */,
-			);
-			path = Engine;
-			sourceTree = "<group>";
-		};
-		69517BEE1DE6164500C4DFB5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				69517BEF1DE6164500C4DFB5 /* UIViewExtensionStyleKit.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		69DCD4E01DE580E3004E1DC2 = {
 			isa = PBXGroup;
 			children = (
+				69517C551DE62F6100C4DFB5 /* StyleKit.framework */,
 				69DCD4EB1DE580E3004E1DC2 /* StyleKitDemo */,
 				69DCD4EA1DE580E3004E1DC2 /* Products */,
 			);
@@ -97,7 +77,6 @@
 			children = (
 				69DCD50E1DE58748004E1DC2 /* Styles */,
 				69DCD4FE1DE58138004E1DC2 /* ViewControllers */,
-				69DCD5041DE581E9004E1DC2 /* Libraries */,
 				69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */,
 				69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */,
 				69DCD4F51DE580E3004E1DC2 /* LaunchScreen.storyboard */,
@@ -123,14 +102,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		69DCD5041DE581E9004E1DC2 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				69517BE81DE6164500C4DFB5 /* StyleKit */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
 		69DCD50E1DE58748004E1DC2 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +120,7 @@
 				69DCD4E51DE580E3004E1DC2 /* Sources */,
 				69DCD4E61DE580E3004E1DC2 /* Frameworks */,
 				69DCD4E71DE580E3004E1DC2 /* Resources */,
+				69517C581DE62F6100C4DFB5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,13 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				69DCD5101DE58759004E1DC2 /* StyleStorage.swift in Sources */,
-				69517BF31DE6164500C4DFB5 /* ViewStyleManager.swift in Sources */,
 				69DCD4ED1DE580E3004E1DC2 /* AppDelegate.swift in Sources */,
-				69517BF21DE6164500C4DFB5 /* ViewStyleBuilder.swift in Sources */,
-				69517BF01DE6164500C4DFB5 /* ViewStyle.swift in Sources */,
 				69DCD5021DE58144004E1DC2 /* MainViewController.swift in Sources */,
-				69517BF11DE6164500C4DFB5 /* ViewStyleAttribute.swift in Sources */,
-				69517BF41DE6164500C4DFB5 /* UIViewExtensionStyleKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

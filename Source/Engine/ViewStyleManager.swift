@@ -51,7 +51,7 @@ public class StyleManager: NSObject {
     // MARK: Public object methods
     
     @discardableResult
-    public func apply(style: Style) -> StyleManager {
+    public func apply(style: ViewStyle) -> StyleManager {
         for attribute in style.attributes {
             apply(attribute: attribute)
         }

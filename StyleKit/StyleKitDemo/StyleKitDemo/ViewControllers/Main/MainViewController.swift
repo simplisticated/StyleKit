@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StyleKit
 
 class MainViewController: UIViewController {
 
