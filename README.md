@@ -34,24 +34,24 @@ Style is a set of UI attributes. Each style includes at least one attribute, but
 /*
  * Create simple style with one attribute.
  */
-let attributes: [StyleAttribute] = [
+let attributes: [ViewStyleAttribute] = [
     .backgroundColor(color: .yellow)
 ]
 
-let yellowBackground = Style(attributes: attributes)
+let yellowBackground = ViewStyle(attributes: attributes)
 
 /*
  * Another way to create the same style.
  */
 
-let anotherYellowBackground = Style.with(attribute: .backgroundColor(color: .yellow))
+let anotherYellowBackground = ViewStyle.with(attribute: .backgroundColor(color: .yellow))
     .done()
 
 /*
  * Create style with multiple attributes.
  */
 
-let greenBackgroundWithThinRedBorder = Style.with(attribute: .backgroundColor(color: .green))
+let greenBackgroundWithThinRedBorder = ViewStyle.with(attribute: .backgroundColor(color: .green))
     .and(attribute: .borderColor(color: .red))
     .and(attribute: .borderWidth(width: 1.0))
     .done()
@@ -79,12 +79,12 @@ Recommended way to manage styles in app is to implement a structure with static 
 ```swift
 struct StyleStorage {
     
-    static let defaultBackground = Style.with(attribute: .backgroundColor(color: .white))
+    static let defaultBackground = ViewStyle.with(attribute: .backgroundColor(color: .white))
         .and(attribute: .borderColor(color: .green))
         .and(attribute: .borderWidth(width: 2.0))
         .done()
     
-    static let thinOrangeText = Style.with(attribute: .textColor(color: .orange))
+    static let thinOrangeText = ViewStyle.with(attribute: .textColor(color: .orange))
         .and(attribute: .font(font: UIFont.systemFont(ofSize: 36.0, weight: UIFontWeightThin)))
         .done()
         
