@@ -76,8 +76,8 @@
 		69517C5A1DE6318E00C4DFB5 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				69517C5B1DE6318E00C4DFB5 /* ViewStyle.swift */,
 				69517C5C1DE6318E00C4DFB5 /* ViewStyleAttribute.swift */,
+				69517C5B1DE6318E00C4DFB5 /* ViewStyle.swift */,
 				69517C5D1DE6318E00C4DFB5 /* ViewStyleBuilder.swift */,
 				69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */,
 			);

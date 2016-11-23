@@ -14,26 +14,26 @@ public class ViewStyle: NSObject {
     
     // MARK: Public class methods
     
-    public class func with(attribute: StyleAttribute) -> StyleBuilder {
+    public class func with(attribute: ViewStyleAttribute) -> ViewStyleBuilder {
         let attributes = [
             attribute
         ]
         
-        return StyleBuilder(attributes: attributes)
+        return ViewStyleBuilder(attributes: attributes)
     }
     
     // MARK: Private class methods
     
     // MARK: Initializers
     
-    public init(attributes: [StyleAttribute]) {
+    public init(attributes: [ViewStyleAttribute]) {
         super.init()
         
         /**
          * Initialize attributes collection.
          */
         
-        _attributes = [StyleAttribute]()
+        _attributes = [ViewStyleAttribute]()
         _attributes.append(contentsOf: attributes)
     }
     
@@ -49,9 +49,9 @@ public class ViewStyle: NSObject {
     
     // MARK: Object variables & properties
     
-    fileprivate var _attributes: [StyleAttribute]!
+    fileprivate var _attributes: [ViewStyleAttribute]!
     
-    public var attributes: [StyleAttribute] {
+    public var attributes: [ViewStyleAttribute] {
         get {
             return _attributes
         }

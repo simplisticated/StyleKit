@@ -1,5 +1,5 @@
 //
-//  StyleManager.swift
+//  ViewStyleManager.swift
 //  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class StyleManager: NSObject {
+public class ViewStyleManager: NSObject {
     
     // MARK: Class variables & properties
     
@@ -51,7 +51,7 @@ public class StyleManager: NSObject {
     // MARK: Public object methods
     
     @discardableResult
-    public func apply(style: ViewStyle) -> StyleManager {
+    public func apply(style: ViewStyle) -> ViewStyleManager {
         for attribute in style.attributes {
             apply(attribute: attribute)
         }
@@ -61,7 +61,7 @@ public class StyleManager: NSObject {
     
     // MARK: Private object methods
     
-    fileprivate func apply(attribute: StyleAttribute) {
+    fileprivate func apply(attribute: ViewStyleAttribute) {
         switch attribute {
         case let .backgroundColor(color):
             associatedView.backgroundColor = color
