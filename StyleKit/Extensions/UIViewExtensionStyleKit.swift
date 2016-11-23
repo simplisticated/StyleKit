@@ -11,9 +11,9 @@ import UIKit
 
 public extension UIView {
     
-    var stl: ViewStyleManager {
+    var stl: StyleManager {
         get {
-            return ViewStyleManager(forView: self)
+            return StyleManager(forView: self)
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  ViewStyle.swift
+//  StyleBuilder.swift
 //  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
@@ -8,33 +8,25 @@
 
 import UIKit
 
-public class ViewStyle: NSObject {
+public class StyleBuilder: NSObject {
     
     // MARK: Class variables & properties
     
     // MARK: Public class methods
     
-    public class func with(attribute: ViewStyleAttribute) -> ViewStyleBuilder {
-        let attributes = [
-            attribute
-        ]
-        
-        return ViewStyleBuilder(attributes: attributes)
-    }
-    
     // MARK: Private class methods
     
     // MARK: Initializers
     
-    public init(attributes: [ViewStyleAttribute]) {
+    internal init(attributes: [StyleAttribute]) {
         super.init()
         
         /**
          * Initialize attributes collection.
          */
         
-        _attributes = [ViewStyleAttribute]()
-        _attributes.append(contentsOf: attributes)
+        self.attributes = [StyleAttribute]()
+        self.attributes.append(contentsOf: attributes)
     }
     
     // MARK: Deinitializer
@@ -44,20 +36,23 @@ public class ViewStyle: NSObject {
          * Remove references.
          */
         
-        _attributes = nil
+        attributes = nil
     }
     
     // MARK: Object variables & properties
     
-    fileprivate var _attributes: [ViewStyleAttribute]!
-    
-    public var attributes: [ViewStyleAttribute] {
-        get {
-            return _attributes
-        }
-    }
+    fileprivate var attributes: [StyleAttribute]!
     
     // MARK: Public object methods
+    
+    public func and(attribute: StyleAttribute) -> StyleBuilder {
+        attributes.append(attribute)
+        return self
+    }
+    
+    public func done() -> Style {
+        return Style(attributes: attributes)
+    }
     
     // MARK: Private object methods
     
