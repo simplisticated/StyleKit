@@ -47,7 +47,6 @@ let greenBackgroundWithThinRedBorder = Style.with(attribute: .backgroundColor(co
  * Apply style to view.
  */
 
-let view = UIView()
 view.stl.apply(style: yellowBackground)
 
 
@@ -55,7 +54,6 @@ view.stl.apply(style: yellowBackground)
  * Apply multiple styles to view.
  */
 
-let view = UIView()
 view.stl.apply(style: yellowBackground)
   .apply(style: greenBackgroundWithThinRedBorder)
 ```
@@ -85,7 +83,7 @@ override func viewDidLoad() {
      * Initialize view.
      */
     
-    view.stl.apply(style: StyleStorage.simpleBackground)
+    view.stl.apply(style: StyleStorage.defaultBackground)
     
     /*
      * Initialize hello label.
