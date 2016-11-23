@@ -91,7 +91,7 @@ Super easy framework for managing visual styles in iOS. Written in Swift.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "StyleKit", "StyleKit/**/*"
+  s.source_files  = "Source", "Source/**/*"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
