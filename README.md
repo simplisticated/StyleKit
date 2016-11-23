@@ -15,11 +15,11 @@ Front-end developers, who create layout for HTML pages, know the simplicity and 
 
 # How To Get Started
 
-- Copy content of `StyleKit` folder to your project.
+- Copy content of `Source` folder to your project.
 
 or
 
-- Use `StyleKit_for_iOS` cocoapod
+- Use `ViewStyles` cocoapod
 
 # Requirements
 
