@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		693F96EB1DE5CB6B00E1F32C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F96E51DE5CB6B00E1F32C /* Style.swift */; };
-		693F96EC1DE5CB6B00E1F32C /* StyleAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F96E61DE5CB6B00E1F32C /* StyleAttribute.swift */; };
-		693F96ED1DE5CB6B00E1F32C /* StyleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F96E71DE5CB6B00E1F32C /* StyleBuilder.swift */; };
-		693F96EE1DE5CB6B00E1F32C /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F96E81DE5CB6B00E1F32C /* StyleManager.swift */; };
-		693F96EF1DE5CB6B00E1F32C /* UIViewExtensionStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F96EA1DE5CB6B00E1F32C /* UIViewExtensionStyleKit.swift */; };
+		6903D1D01DE5D74700956F15 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903D1CA1DE5D74700956F15 /* Style.swift */; };
+		6903D1D11DE5D74700956F15 /* StyleAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903D1CB1DE5D74700956F15 /* StyleAttribute.swift */; };
+		6903D1D21DE5D74700956F15 /* StyleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903D1CC1DE5D74700956F15 /* StyleBuilder.swift */; };
+		6903D1D31DE5D74700956F15 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903D1CD1DE5D74700956F15 /* StyleManager.swift */; };
+		6903D1D41DE5D74700956F15 /* UIViewExtensionStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6903D1CF1DE5D74700956F15 /* UIViewExtensionStyleKit.swift */; };
 		69DCD4ED1DE580E3004E1DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */; };
 		69DCD4F41DE580E3004E1DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */; };
 		69DCD4F71DE580E3004E1DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DCD4F51DE580E3004E1DC2 /* LaunchScreen.storyboard */; };
@@ -21,11 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		693F96E51DE5CB6B00E1F32C /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		693F96E61DE5CB6B00E1F32C /* StyleAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleAttribute.swift; sourceTree = "<group>"; };
-		693F96E71DE5CB6B00E1F32C /* StyleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleBuilder.swift; sourceTree = "<group>"; };
-		693F96E81DE5CB6B00E1F32C /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
-		693F96EA1DE5CB6B00E1F32C /* UIViewExtensionStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionStyleKit.swift; sourceTree = "<group>"; };
+		6903D1CA1DE5D74700956F15 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		6903D1CB1DE5D74700956F15 /* StyleAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleAttribute.swift; sourceTree = "<group>"; };
+		6903D1CC1DE5D74700956F15 /* StyleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleBuilder.swift; sourceTree = "<group>"; };
+		6903D1CD1DE5D74700956F15 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		6903D1CF1DE5D74700956F15 /* UIViewExtensionStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionStyleKit.swift; sourceTree = "<group>"; };
 		69DCD4E91DE580E3004E1DC2 /* StyleKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,31 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		693F96E31DE5CB6B00E1F32C /* StyleKit */ = {
+		6903D1C81DE5D74700956F15 /* StyleKit */ = {
 			isa = PBXGroup;
 			children = (
-				693F96E41DE5CB6B00E1F32C /* Engine */,
-				693F96E91DE5CB6B00E1F32C /* Extensions */,
+				6903D1C91DE5D74700956F15 /* Engine */,
+				6903D1CE1DE5D74700956F15 /* Extensions */,
 			);
 			name = StyleKit;
 			path = ../../../../StyleKit;
 			sourceTree = "<group>";
 		};
-		693F96E41DE5CB6B00E1F32C /* Engine */ = {
+		6903D1C91DE5D74700956F15 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				693F96E51DE5CB6B00E1F32C /* Style.swift */,
-				693F96E61DE5CB6B00E1F32C /* StyleAttribute.swift */,
-				693F96E71DE5CB6B00E1F32C /* StyleBuilder.swift */,
-				693F96E81DE5CB6B00E1F32C /* StyleManager.swift */,
+				6903D1CA1DE5D74700956F15 /* Style.swift */,
+				6903D1CB1DE5D74700956F15 /* StyleAttribute.swift */,
+				6903D1CC1DE5D74700956F15 /* StyleBuilder.swift */,
+				6903D1CD1DE5D74700956F15 /* StyleManager.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
 		};
-		693F96E91DE5CB6B00E1F32C /* Extensions */ = {
+		6903D1CE1DE5D74700956F15 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				693F96EA1DE5CB6B00E1F32C /* UIViewExtensionStyleKit.swift */,
+				6903D1CF1DE5D74700956F15 /* UIViewExtensionStyleKit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 		69DCD5041DE581E9004E1DC2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				693F96E31DE5CB6B00E1F32C /* StyleKit */,
+				6903D1C81DE5D74700956F15 /* StyleKit */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -213,13 +213,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				69DCD5101DE58759004E1DC2 /* StyleStorage.swift in Sources */,
-				693F96EC1DE5CB6B00E1F32C /* StyleAttribute.swift in Sources */,
+				6903D1D11DE5D74700956F15 /* StyleAttribute.swift in Sources */,
 				69DCD4ED1DE580E3004E1DC2 /* AppDelegate.swift in Sources */,
-				693F96ED1DE5CB6B00E1F32C /* StyleBuilder.swift in Sources */,
+				6903D1D21DE5D74700956F15 /* StyleBuilder.swift in Sources */,
 				69DCD5021DE58144004E1DC2 /* MainViewController.swift in Sources */,
-				693F96EB1DE5CB6B00E1F32C /* Style.swift in Sources */,
-				693F96EE1DE5CB6B00E1F32C /* StyleManager.swift in Sources */,
-				693F96EF1DE5CB6B00E1F32C /* UIViewExtensionStyleKit.swift in Sources */,
+				6903D1D01DE5D74700956F15 /* Style.swift in Sources */,
+				6903D1D31DE5D74700956F15 /* StyleManager.swift in Sources */,
+				6903D1D41DE5D74700956F15 /* UIViewExtensionStyleKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
