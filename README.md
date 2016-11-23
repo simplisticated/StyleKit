@@ -28,6 +28,73 @@ or
 
 # Usage
 
+```swift
+/*
+ * Declare simple style with one attribute.
+ */
+
+let yellowBackground = Style.with(attribute: .backgroundColor(color: .yellow))
+
+/*
+ * Declare style with multiple attributes.
+ */
+
+let greenBackgroundWithThinRedBorder = Style.with(attribute: .backgroundColor(color: .green))
+    .and(attribute: .borderColor(color: .red))
+    .and(attribute: .borderWidth(width: 1.0))
+
+/*
+ * Apply style to view.
+ */
+
+let view = UIView()
+view.stl.apply(style: yellowBackground)
+
+
+/*
+ * Apply multiple styles to view.
+ */
+
+let view = UIView()
+view.stl.apply(style: yellowBackground)
+  .apply(style: greenBackgroundWithThinRedBorder)
+```
+
+Recommended way to manage styles in app is to implement a structure with static styles:
+
+```swift
+struct StyleStorage {
+    static let defaultBackground = Style.with(attribute: .backgroundColor(color: .white))
+        .and(attribute: .borderColor(color: .green))
+        .and(attribute: .borderWidth(width: 2.0))
+        .done()
+    
+    static let thinOrangeText = Style.with(attribute: .textColor(color: .orange))
+        .and(attribute: .font(font: UIFont.systemFont(ofSize: 36.0, weight: UIFontWeightThin)))
+        .done()
+}
+```
+
+You can reuse those styles many times in different places of the app:
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    /*
+     * Initialize view.
+     */
+    
+    view.stl.apply(style: StyleStorage.simpleBackground)
+    
+    /*
+     * Initialize hello label.
+     */
+    
+    titleLabel.stl.apply(style: StyleStorage.thinOrangeText)
+}
+```
+
 # License
 
 `StyleKit` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
