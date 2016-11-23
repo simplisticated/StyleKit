@@ -1,5 +1,5 @@
 //
-//  ViewStyleAttribute.swift
+//  StyleAttribute.swift
 //  StyleKit
 //
 //  Created by Igor Matyushkin on 23.11.16.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public enum ViewStyleAttribute {
+public enum StyleAttribute {
     case backgroundColor(color: UIColor)
     case borderColor(color: UIColor)
     case borderWidth(width: CGFloat)

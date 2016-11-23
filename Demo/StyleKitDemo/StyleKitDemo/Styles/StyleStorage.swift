@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 struct StyleStorage {
-    static let simpleBackground = ViewStyle.with(attribute: .backgroundColor(color: .white))
+    static let simpleBackground = Style.with(attribute: .backgroundColor(color: .white))
         .and(attribute: .borderColor(color: .green))
         .and(attribute: .borderWidth(width: 2.0))
         .done()
     
-    static let thinOrangeText = ViewStyle.with(attribute: .textColor(color: .orange))
+    static let thinOrangeText = Style.with(attribute: .textColor(color: .orange))
         .and(attribute: .font(font: UIFont.systemFont(ofSize: 36.0, weight: UIFontWeightThin)))
         .done()
 }
