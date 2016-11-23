@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint DataKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint ViewStyles.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "StyleKit_for_iOS"
+  s.name         = "ViewStyles"
   s.version      = "1.0"
   s.summary      = "CSS for iOS."
 
