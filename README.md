@@ -19,7 +19,7 @@ Front-end developers, who create layout for HTML pages, know the simplicity and 
 
 or
 
-- Use `ViewStyles` cocoapod
+- Use `UIStyle` cocoapod
 
 # Requirements
 
