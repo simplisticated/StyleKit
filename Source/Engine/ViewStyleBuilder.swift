@@ -49,11 +49,26 @@ public class ViewStyleBuilder: NSObject {
     // MARK: Public object methods
     
     public func and(attribute: ViewStyleAttribute) -> ViewStyleBuilder {
+        /**
+         * Append attribute to collection.
+         */
+        
         attributes.append(attribute)
+        
+        /**
+         * Return reference to current instance of `ViewStyleBuilder` class
+         * to support call chains.
+         */
+        
         return self
     }
     
     public func done() -> ViewStyle {
+        /**
+         * Return style filled with attributes from
+         * current builder's collection.
+         */
+        
         return ViewStyle(attributes: attributes)
     }
     

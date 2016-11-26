@@ -62,11 +62,24 @@ public class ViewStyleManager: NSObject {
      */
     @discardableResult
     public func apply(style: ViewStyle) -> ViewStyleManager {
+        /**
+         * Create view style attribute handler.
+         */
+        
         let viewStyleAttributeHandler = ViewStyleAttributeHandler()
+        
+        /**
+         * Apply all attributes included in style to associated view.
+         */
         
         for attribute in style.attributes {
             viewStyleAttributeHandler.apply(attribute: attribute, toView: associatedView)
         }
+        
+        /**
+         * Return reference to current `ViewStyleManager` instance
+         * to support call chains.
+         */
         
         return self
     }

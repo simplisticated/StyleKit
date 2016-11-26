@@ -11,6 +11,9 @@ import UIKit
 
 public extension UIView {
     
+    /**
+     * `ViewStyleManager` instance, associated with current view.
+     */
     var stl: ViewStyleManager {
         get {
             return ViewStyleManager(forView: self)
