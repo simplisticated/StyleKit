@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * Applies attributes to views.
+ */
 internal class ViewStyleAttributeHandler: NSObject {
     
     // MARK: Class variables & properties
@@ -41,6 +44,12 @@ internal class ViewStyleAttributeHandler: NSObject {
             break
         case let .borderWidth(width):
             view.layer.borderWidth = width
+            break
+        case let .frame(frame):
+            view.frame = frame
+            break
+        case let .size(size):
+            view.frame = CGRect(origin: view.frame.origin, size: size)
             break
         case let .textColor(color):
             if view is UILabel {

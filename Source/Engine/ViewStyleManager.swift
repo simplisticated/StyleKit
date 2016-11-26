@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * Applies styles to view.
+ */
 public class ViewStyleManager: NSObject {
     
     // MARK: Class variables & properties
@@ -42,6 +45,10 @@ public class ViewStyleManager: NSObject {
     
     fileprivate var _associatedView: UIView!
     
+    /**
+     * The view that is managed by current instance
+     * of `ViewStyleManager` class.
+     */
     public var associatedView: UIView {
         get {
             return _associatedView
@@ -50,6 +57,9 @@ public class ViewStyleManager: NSObject {
     
     // MARK: Public object methods
     
+    /**
+     * Applies style to associated view.
+     */
     @discardableResult
     public func apply(style: ViewStyle) -> ViewStyleManager {
         let viewStyleAttributeHandler = ViewStyleAttributeHandler()

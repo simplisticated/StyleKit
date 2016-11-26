@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * Builder for `ViewStyle` instance.
+ */
 public class ViewStyleBuilder: NSObject {
     
     // MARK: Class variables & properties

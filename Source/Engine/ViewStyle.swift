@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * Represents view style which is a set of attributes.
+ */
 public class ViewStyle: NSObject {
     
     // MARK: Class variables & properties
@@ -51,6 +54,9 @@ public class ViewStyle: NSObject {
     
     fileprivate var _attributes: [ViewStyleAttribute]!
     
+    /**
+     * Collection of attributes, included in current style.
+     */
     public var attributes: [ViewStyleAttribute] {
         get {
             return _attributes

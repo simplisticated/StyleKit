@@ -10,6 +10,9 @@
 import Foundation
 import UIKit
 
+/**
+ * Attribute of UI style.
+ */
 public enum ViewStyleAttribute {
     /**
      * Works with any `UIView` instance.
@@ -25,6 +28,16 @@ public enum ViewStyleAttribute {
      * Works with any `UIView` instance.
      */
     case borderWidth(width: CGFloat)
+    
+    /**
+     * Works with any `UIView` instance.
+     */
+    case frame(frame: CGRect)
+    
+    /**
+     * Works with any `UIView` instance.
+     */
+    case size(size: CGSize)
     
     /**
      * Works with `UILabel` and `UITextView`.
