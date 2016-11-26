@@ -14,7 +14,24 @@ internal class ViewStyleAttributeHandler: NSObject {
     
     // MARK: Public class methods
     
-    internal class func apply(attribute: ViewStyleAttribute, toView view: UIView) {
+    // MARK: Private class methods
+    
+    // MARK: Initializers
+    
+    public override init() {
+        super.init()
+    }
+    
+    // MARK: Deinitializer
+    
+    deinit {
+    }
+    
+    // MARK: Object variables & properties
+    
+    // MARK: Public object methods
+    
+    public func apply(attribute: ViewStyleAttribute, toView view: UIView) {
         switch attribute {
         case let .backgroundColor(color):
             view.backgroundColor = color
@@ -61,19 +78,6 @@ internal class ViewStyleAttributeHandler: NSObject {
             break
         }
     }
-    
-    // MARK: Private class methods
-    
-    // MARK: Initializers
-    
-    // MARK: Deinitializer
-    
-    deinit {
-    }
-    
-    // MARK: Object variables & properties
-    
-    // MARK: Public object methods
     
     // MARK: Private object methods
     

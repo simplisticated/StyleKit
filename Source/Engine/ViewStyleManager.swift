@@ -42,7 +42,7 @@ public class ViewStyleManager: NSObject {
     
     fileprivate var _associatedView: UIView!
     
-    fileprivate var associatedView: UIView {
+    public var associatedView: UIView {
         get {
             return _associatedView
         }
@@ -52,18 +52,16 @@ public class ViewStyleManager: NSObject {
     
     @discardableResult
     public func apply(style: ViewStyle) -> ViewStyleManager {
+        let viewStyleAttributeHandler = ViewStyleAttributeHandler()
+        
         for attribute in style.attributes {
-            apply(attribute: attribute)
+            viewStyleAttributeHandler.apply(attribute: attribute, toView: associatedView)
         }
         
         return self
     }
     
     // MARK: Private object methods
-    
-    fileprivate func apply(attribute: ViewStyleAttribute) {
-        ViewStyleAttributeHandler.apply(attribute: attribute, toView: associatedView)
-    }
     
     // MARK: Protocol methods
     

@@ -81,8 +81,8 @@
 				69517C5C1DE6318E00C4DFB5 /* ViewStyleAttribute.swift */,
 				69517C5B1DE6318E00C4DFB5 /* ViewStyle.swift */,
 				69517C5D1DE6318E00C4DFB5 /* ViewStyleBuilder.swift */,
-				69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */,
 				69B456C41DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift */,
+				69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
