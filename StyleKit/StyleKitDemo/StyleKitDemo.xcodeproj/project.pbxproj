@@ -55,10 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69DCD4E01DE580E3004E1DC2 = {
+		69B456C31DE9088D006BCB8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				69517C551DE62F6100C4DFB5 /* StyleKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69DCD4E01DE580E3004E1DC2 = {
+			isa = PBXGroup;
+			children = (
 				69DCD4EB1DE580E3004E1DC2 /* StyleKitDemo */,
 				69DCD4EA1DE580E3004E1DC2 /* Products */,
 			);
@@ -77,6 +84,7 @@
 			children = (
 				69DCD50E1DE58748004E1DC2 /* Styles */,
 				69DCD4FE1DE58138004E1DC2 /* ViewControllers */,
+				69B456C31DE9088D006BCB8D /* Frameworks */,
 				69DCD4EC1DE580E3004E1DC2 /* AppDelegate.swift */,
 				69DCD4F31DE580E3004E1DC2 /* Assets.xcassets */,
 				69DCD4F51DE580E3004E1DC2 /* LaunchScreen.storyboard */,

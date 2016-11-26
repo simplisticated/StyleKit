@@ -62,44 +62,7 @@ public class ViewStyleManager: NSObject {
     // MARK: Private object methods
     
     fileprivate func apply(attribute: ViewStyleAttribute) {
-        switch attribute {
-        case let .backgroundColor(color):
-            associatedView.backgroundColor = color
-            break
-        case let .borderColor(color):
-            associatedView.layer.borderColor = color.cgColor
-            break
-        case let .borderWidth(width):
-            associatedView.layer.borderWidth = width
-            break
-        case let .textColor(color):
-            if associatedView is UILabel {
-                let label = associatedView as! UILabel
-                label.textColor = color
-            } else if associatedView is UITextView {
-                let textView = associatedView as! UITextView
-                textView.textColor = color
-            }
-            break
-        case let .font(font):
-            if associatedView is UILabel {
-                let label = associatedView as! UILabel
-                label.font = font
-            } else if associatedView is UITextView {
-                let textView = associatedView as! UITextView
-                textView.font = font
-            }
-            break
-        case let .textAlignment(alignment):
-            if associatedView is UILabel {
-                let label = associatedView as! UILabel
-                label.textAlignment = alignment
-            } else if associatedView is UITextView {
-                let textView = associatedView as! UITextView
-                textView.textAlignment = alignment
-            }
-            break
-        }
+        ViewStyleAttributeHandler.apply(attribute: attribute, toView: associatedView)
     }
     
     // MARK: Protocol methods
