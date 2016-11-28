@@ -64,6 +64,13 @@ internal class ViewStyleAttributeHandler: NSObject {
             
             view.layer.borderWidth = width
             break
+        case let .cornerRadius(radius):
+            /**
+             * Update view's corner radius.
+             */
+            
+            view.layer.cornerRadius = radius
+            break
         case let .frame(frame):
             /**
              * Update view's frame.
@@ -97,6 +104,32 @@ internal class ViewStyleAttributeHandler: NSObject {
                 
                 let textView = view as! UITextView
                 textView.textColor = color
+            } else if view is UIButton {
+                /**
+                 * Update text color of `UIButton` instance.
+                 */
+                
+                let button = view as! UIButton
+                button.setTitleColor(color, for: .normal)
+            } else {
+                /**
+                 * View's type is not supported by current attribute.
+                 * Therefore, do nothing.
+                 */
+            }
+            break
+        case let .buttonTitleColor(titleColor, controlState):
+            /**
+             * Check view's type.
+             */
+            
+            if view is UIButton {
+                /**
+                 * Update text color of `UIButton` instance.
+                 */
+                
+                let button = view as! UIButton
+                button.setTitleColor(titleColor, for: controlState)
             } else {
                 /**
                  * View's type is not supported by current attribute.
@@ -123,6 +156,13 @@ internal class ViewStyleAttributeHandler: NSObject {
                 
                 let textView = view as! UITextView
                 textView.font = font
+            } else if view is UIButton {
+                /**
+                 * Update font of `UIButton` instance.
+                 */
+                
+                let button = view as! UIButton
+                button.titleLabel?.font = font
             } else {
                 /**
                  * View's type is not supported by current attribute.
@@ -149,6 +189,44 @@ internal class ViewStyleAttributeHandler: NSObject {
                 
                 let textView = view as! UITextView
                 textView.textAlignment = alignment
+            } else {
+                /**
+                 * View's type is not supported by current attribute.
+                 * Therefore, do nothing.
+                 */
+            }
+            break
+        case let .contentHorizontalAlignment(alignment):
+            /**
+             * Check view's type.
+             */
+            
+            if view is UIControl {
+                /**
+                 * Update content horizontal alignment of `UIButton` instance.
+                 */
+                
+                let control = view as! UIControl
+                control.contentHorizontalAlignment = alignment
+            } else {
+                /**
+                 * View's type is not supported by current attribute.
+                 * Therefore, do nothing.
+                 */
+            }
+            break
+        case let .contentVerticalAlignment(alignment):
+            /**
+             * Check view's type.
+             */
+            
+            if view is UIControl {
+                /**
+                 * Update content horizontal alignment of `UIButton` instance.
+                 */
+                
+                let control = view as! UIControl
+                control.contentVerticalAlignment = alignment
             } else {
                 /**
                  * View's type is not supported by current attribute.
