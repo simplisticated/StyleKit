@@ -39,13 +39,17 @@ class MainViewController: UIViewController {
          * Initialize view.
          */
         
-        view.stl.apply(style: StyleStorage.simpleBackground)
+        if StyleStorage.simpleBackground.supports(view: view) {
+            view.stl.apply(style: StyleStorage.simpleBackground)
+        }
         
         /**
          * Initialize hello label.
          */
         
-        helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
+        if StyleStorage.thinOrangeText.supports(view: helloLabel) {
+            helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
+        }
     }
     
     override func didReceiveMemoryWarning() {
