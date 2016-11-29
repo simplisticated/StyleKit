@@ -234,6 +234,25 @@ internal class ViewStyleAttributeHandler: NSObject {
                  */
             }
             break
+        case let .tintColor(color):
+            /**
+             * Check view's type.
+             */
+            
+            if view is UIControl {
+                /**
+                 * Update tint color of `UIButton` instance.
+                 */
+                
+                let control = view as! UIControl
+                control.tintColor = color
+            } else {
+                /**
+                 * View's type is not supported by current attribute.
+                 * Therefore, do nothing.
+                 */
+            }
+            break
         case let .image(image, contentMode):
             /**
              * Check view's type.

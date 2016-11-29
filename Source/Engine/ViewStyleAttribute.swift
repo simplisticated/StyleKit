@@ -75,6 +75,11 @@ public enum ViewStyleAttribute {
     case contentVerticalAlignment(alignment: UIControlContentVerticalAlignment)
     
     /**
+     * Works with `UIControl`.
+     */
+    case tintColor(color: UIColor)
+    
+    /**
      * Works with `UIImageView`.
      */
     case image(image: UIImage, contentMode: UIViewContentMode)
