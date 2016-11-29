@@ -76,14 +76,6 @@ view.stl.apply(style: yellowBackground)
     .apply(style: greenBackgroundWithThinRedBorder)
 ```
 
-Also, it's possible to check programmatically if style supports view:
-
-```swift
-if StyleStorage.thinOrangeText.supports(view: helloLabel) {
-    helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
-}
-```
-
 Recommended way to manage styles in app is to implement a structure with static styles:
 
 ```swift
@@ -118,6 +110,14 @@ override func viewDidLoad() {
      */
     
     titleLabel.stl.apply(style: StyleStorage.thinOrangeText)
+}
+```
+
+Also, it's possible to check programmatically if style supports view:
+
+```swift
+if StyleStorage.thinOrangeText.supports(view: helloLabel) {
+    helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
 }
 ```
 
