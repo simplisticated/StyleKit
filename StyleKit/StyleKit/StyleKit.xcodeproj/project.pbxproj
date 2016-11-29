@@ -14,6 +14,8 @@
 		69517C641DE6318E00C4DFB5 /* ViewStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */; };
 		69517C651DE6318E00C4DFB5 /* UIViewExtensionStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69517C601DE6318E00C4DFB5 /* UIViewExtensionStyleKit.swift */; };
 		69B456C51DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B456C41DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift */; };
+		69DC76691DED064B00E4CEDD /* ViewStyleAttributeExtensionSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC76681DED064B00E4CEDD /* ViewStyleAttributeExtensionSupport.swift */; };
+		69DC766B1DED07CF00E4CEDD /* ViewStyleExtensionSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC766A1DED07CF00E4CEDD /* ViewStyleExtensionSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleManager.swift; sourceTree = "<group>"; };
 		69517C601DE6318E00C4DFB5 /* UIViewExtensionStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionStyleKit.swift; sourceTree = "<group>"; };
 		69B456C41DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleAttributeHandler.swift; sourceTree = "<group>"; };
+		69DC76681DED064B00E4CEDD /* ViewStyleAttributeExtensionSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleAttributeExtensionSupport.swift; sourceTree = "<group>"; };
+		69DC766A1DED07CF00E4CEDD /* ViewStyleExtensionSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyleExtensionSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				69517C5C1DE6318E00C4DFB5 /* ViewStyleAttribute.swift */,
+				69DC76681DED064B00E4CEDD /* ViewStyleAttributeExtensionSupport.swift */,
 				69517C5B1DE6318E00C4DFB5 /* ViewStyle.swift */,
+				69DC766A1DED07CF00E4CEDD /* ViewStyleExtensionSupport.swift */,
 				69517C5D1DE6318E00C4DFB5 /* ViewStyleBuilder.swift */,
 				69B456C41DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift */,
 				69517C5E1DE6318E00C4DFB5 /* ViewStyleManager.swift */,
@@ -175,9 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DC766B1DED07CF00E4CEDD /* ViewStyleExtensionSupport.swift in Sources */,
 				69517C651DE6318E00C4DFB5 /* UIViewExtensionStyleKit.swift in Sources */,
 				69B456C51DE90A3C006BCB8D /* ViewStyleAttributeHandler.swift in Sources */,
 				69517C641DE6318E00C4DFB5 /* ViewStyleManager.swift in Sources */,
+				69DC76691DED064B00E4CEDD /* ViewStyleAttributeExtensionSupport.swift in Sources */,
 				69517C611DE6318E00C4DFB5 /* ViewStyle.swift in Sources */,
 				69517C621DE6318E00C4DFB5 /* ViewStyleAttribute.swift in Sources */,
 				69517C631DE6318E00C4DFB5 /* ViewStyleBuilder.swift in Sources */,
