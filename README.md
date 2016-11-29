@@ -111,6 +111,14 @@ override func viewDidLoad() {
 }
 ```
 
+Also, you can check programmatically if style supports view:
+
+```swift
+if StyleStorage.thinOrangeText.supports(view: helloLabel) {
+    helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
+}
+```
+
 # License
 
 `StyleKit` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
