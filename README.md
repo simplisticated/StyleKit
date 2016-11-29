@@ -57,6 +57,8 @@ let greenBackgroundWithThinRedBorder = ViewStyle.with(attribute: .backgroundColo
     .done()
 ```
 
+Full list of attributes is available in [ViewStyleAttribute.swift](https://github.com/igormatyushkin014/StyleKit/blob/master/Source/Engine/ViewStyleAttribute.swift) file.
+
 Any style can be applied to any view. You can apply unlimited number of styles to the same view.
 
 ```swift
@@ -72,6 +74,14 @@ view.stl.apply(style: yellowBackground)
 
 view.stl.apply(style: yellowBackground)
     .apply(style: greenBackgroundWithThinRedBorder)
+```
+
+Also, it's possible to check programmatically if style supports view:
+
+```swift
+if StyleStorage.thinOrangeText.supports(view: helloLabel) {
+    helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
+}
 ```
 
 Recommended way to manage styles in app is to implement a structure with static styles:
@@ -91,7 +101,7 @@ struct StyleStorage {
 }
 ```
 
-You can reuse those styles many times in different places of the app:
+Those styles can be reused many times in different places of the app:
 
 ```swift
 override func viewDidLoad() {
@@ -108,14 +118,6 @@ override func viewDidLoad() {
      */
     
     titleLabel.stl.apply(style: StyleStorage.thinOrangeText)
-}
-```
-
-Also, you can check programmatically if style supports view:
-
-```swift
-if StyleStorage.thinOrangeText.supports(view: helloLabel) {
-    helloLabel.stl.apply(style: StyleStorage.thinOrangeText)
 }
 ```
 
